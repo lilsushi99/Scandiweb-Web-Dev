@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: hsl(30, 30%, 95%);
+}
+
+#select-all {
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+#select-all label {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.empty {
+  font-size: 2rem;
+  margin: 3rem auto;
+  font-weight: 700;
+}
+
+.Product {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.Container {
+  max-width: 1170px;
+  margin: auto;
+}
+.Container .Title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+#delete-product-btn {
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  position: relative;
+  left: 67rem;
+  bottom: 35px;
+  color: #fff;
+  background-color: red;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.add-btn {
+  padding: 8px 8px 8px 8px;
+  position: relative;
+  left: 65.5rem;
+  bottom: 35px;
+  color: #fff;
+  background-color: red;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.line1 {
+  background: black;
+  height: 1px;
+  width: 1170px;
+  position: relative;
+  bottom: 20px;
+}
+.line2 {
+  background: black;
+  height: 1px;
+  width: 1170px;
+  position: relative;
+  top: 20px;
+}
+.Product-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 50px;
+}
+.Product-wrap {
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+  outline: 0.1rem solid #ccc;
+  outline-offset: -1.5rem;
+  height: 20rem;
+}
+.Center-div {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+.Product-price {
+  font-weight: bold;
+}
+.Product-id {
+  line-height: 1;
+}
+.Product-name {
+  line-height: 3;
+}
+.Product-Size {
+  line-height: 3;
+}
+.Product-Weight {
+  line-height: 3;
+}
+.Product-Dimension {
+  line-height: 3;
+}
+footer {
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+@media (max-width: 450px) {
+  .line1 {
+       width: 350px;
+  }
+  .Container .Title {
+       font-size: 20px;
+  }
+  .Center-div {
+       position: relative;
+       bottom: 15rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}

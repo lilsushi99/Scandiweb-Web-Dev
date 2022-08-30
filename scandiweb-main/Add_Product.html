@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="add-product.css" rel="stylesheet">
+    <title>Add Project Page</title>
+</head>
+
+<body>
+    <div id="toast">
+        <!-- <p>product added</p> -->
+    </div>
+    <section class="Add-product">
+        <div class="Add-Container">
+            <div class="Add-Title">Product Add</div>
+            <div class="line1"></div>
+            <div id="product-form">
+                <form id="add-product-form" action="save.php" method="POST" autocomplete="off">
+                    <div class="move-label1">
+                        <label>SKU</label>
+                    </div>
+                    <div class="move-field">
+                        <input type="text" placeholder="#sku" name="sku" required>
+                    </div>
+                    <div class="move-label2">
+                        <label>Name</label>
+                    </div>
+                    <div class="move-field">
+                        <input type="text" placeholder="#name" name="name" required>
+                    </div>
+                    <div class="move-label3">
+                        <label>Price ($)</label>
+                    </div>
+                    <div class="move-field">
+                        <input type="number" placeholder="#price" name="price" required>
+                    </div>
+                    <div class="Save-btn">
+                        <input type="submit">
+                    </div>
+                    <label>Type Switcher</label>
+                    <select id="productType" name="productType">
+                        <!-- <option value="d">Type Switcher</option> -->
+                        <div class="producType2">
+                        <option value="Disc">Disc</option>
+                        <option value="Iron">Iron</option>
+                        <option value="Table">Table</option>
+                        </div>
+                    </select>
+                    <div id="type-forms">
+                        <!-- <div class="fieldbox" id="Disc-switch">
+                            <label>Size</label>
+                            <input type="text" placeholder="Enter Disc Size" />
+                        </div>
+                        <div class="fieldbox" id="Iron-switch">
+                            <label>Weight</label>
+                            <input type="text" placeholder="Enter Iron Weight" />
+                        </div>
+                        <div class="fieldbox" id="Table-switch">
+                            <label>Dimension</label>
+                            <input type="text" placeholder="Enter Table Dimensions" />
+                            <input type="text" placeholder="Enter Table Dimensions" />
+                            <input type="text" placeholder="Enter Table Dimensions" />
+                        </div> -->
+                    </div>
+                    <!-- <button type="submit">submit</button> -->
+                </form>
+                <button class="Cancel-btn">
+                    <a href="Productpage.html">Cancel</a>
+                </button>
+                </a>
+            </div>
+            <div class="line2"></div>
+        </div>
+    </section>
+</body>
+<script src="./js/database.js"></script>
+<script src="./js/addProduct.js"></script>
+
+</html>

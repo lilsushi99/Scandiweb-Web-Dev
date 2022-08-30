@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: hsl(30, 30%, 95%);
+}
+
+#toast.open {
+  /* top: 3rem; */
+  animation: from-top 0.8s;
+}
+
+/* toast */
+#toast {
+  background-color: rgb(94, 255, 94);
+  color: white;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1.1rem;
+  position: absolute;
+  left: 50%;
+  top: -3rem;
+  height: 2rem;
+  transform: translateX(-50%);
+  border-radius: 0.4rem;
+}
+
+@keyframes from-top {
+  70% {
+    top: 2rem;
+  }
+  100% {
+    top: -2rem;
+  }
+}
+
+.Add-product {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 85px;
+}
+.Add-Container {
+  max-width: 1170;
+  margin: auto;
+}
+.Add-Title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+#product-form {
+  position: relative;
+  top: 20px;
+}
+.move-field {
+  position: relative;
+  margin-left: 83px;
+}
+.move-field input {
+  height: 35px;
+  font-size: 15px;
+  outline: none;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+}
+.move-field input:is(:first, :valid) {
+  box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.15);
+}
+.move-label1 {
+  position: relative;
+  top: 22px;
+}
+.move-label2 {
+  position: relative;
+  top: 22px;
+}
+.move-label3 {
+  position: relative;
+  top: 22px;
+}
+.Save-btn input {
+  color: #fff;
+  background-color: blue;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  bottom: 215px;
+  left: 65rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.Cancel-btn {
+  color: #fff;
+  background-color: blue;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+  bottom: 287px;
+  left: 70rem;
+}
+.line1 {
+  background: black;
+  height: 1px;
+  width: 1170px;
+  position: relative;
+  top: 15px;
+}
+
+#productType {
+  margin-left: 20px;
+}
+
+.prodctType2 {
+  position: relative;
+  left: 50px;
+  display: flex;
+}
